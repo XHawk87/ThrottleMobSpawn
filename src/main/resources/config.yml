@@ -1,0 +1,44 @@
+## ThrottleMobSpawn configuration file
+##
+## spawns: - The default number of mob spawns allowed within a period
+## interval: - The period of time in whole minutes
+## natural: - Overrides world settings for natural spawns due to spawn tick
+##   spawns: - The default number of natural mob spawns allowed within a period
+##   interval: - The period of time in whole minutes for this category
+## spawner: - Overrides world settings for mob spawners
+##   spawns: - The default number of spawner mob spawns allowed within a period
+##   interval: - The period of time in whole minutes for this category
+## breeding: - Overrides world settings for animal breeding
+##   spawns: - The default number of breeding mob spawns allowed within a period
+##   interval: - The period of time in whole minutes for this category
+## worlds: - This section contains world-specific settings
+##   world_name: - replace with the name of the world for which these settings apply
+##     spawns: - The default number of mob spawns allowed within a period in this world
+##     interval: - The period of time in whole minutes in this world
+##     natural: - Overrides world settings for natural spawns due to spawn tick
+##       spawns: - The number of natural mob spawns allowed within a period in this world
+##       interval: - The period of time in whole minutes for this category
+##     spawner: - Overrides world settings for mob spawners
+##       spawns: - The number of spawner mob spawns allowed within a period in this world
+##       interval: - The period of time in whole minutes for this category
+##     breeding: - Overrides world settings for animal breeding
+##       spawns: - The number of breeding mob spawns allowed within a period in this world
+##       interval: - The period of time in whole minutes for this category
+##
+## Optional extra spawn types (these are unlimited unless specifically added):
+##   jockey: - mainly spider jockey spawns
+##   chunk_gen: - when chunks are first created
+##   egg: - a chicken spawns from an egg
+##   spawner_egg: - A mob spawns from a Spawn Egg
+##   lightning: - lightning strikes
+##   build_snowman: - when a snowman is built
+##   build_irongolem: - when an iron golem is built
+##   build_wither: - when a wither is built
+##   village_defense: - when a golem is spawned to defend a village
+##   village_invasion: - when zombies are spawned to invade a village
+##   slime_split: - when smaller slimes spawn from bigger slimes
+##   custom: - when a mob is spawned by a plugin
+##   default: - mob is spawned for unknown, possibly mysterious reasons
+---
+spawns: 16
+interval: 60

@@ -1,0 +1,22 @@
+name: ${project.name}
+main: ${project.groupId}.${project.artifactId}.${project.name}
+version: ${project.version}
+description: ${project.description}
+
+commands:
+  SetMobSpawnRate:
+    description: Sets the mob spawn rate for the whole server, a given world and/or for a specific spawn reason
+    usage: /SetMobSpawnRate ([world]) ([spawn reason]) [max spawns] [interval]
+    permissions: throttlemobspawn.commands.setmobspawnrate
+  TMSDebug:
+    description: Displays debug information about the chunk you are in
+    usage: /TMSDebug
+    permissions: throttlemobspawn.commands.tmsdebug
+
+permissions:
+  throttlemobspawn.commands.setmobspawnrate:
+    description: Allows use of the SetMobSpawnRate command
+    default: op
+  throttlemobspawn.commands.tmsdebug:
+    description: Allows use of the TMSDebug command
+    default: op
